@@ -19,6 +19,13 @@ def find_greater_pair(src)
   larger_array = []
   row_index = 0
   while row_index < src.count
+  if src[row_index][0] > src[row_index][1]
+    larger_array.push(src[row_index][0])
+  else
+    larger_array.push(src[row_index][1])
+  end
+    row_index += 1
+  end
   return larger_array
 end
 
