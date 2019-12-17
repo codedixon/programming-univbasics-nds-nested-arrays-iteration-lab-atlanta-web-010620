@@ -5,12 +5,9 @@ def join_ingredients(src)
   # inserted into this template:
   inner_array = []
   row_index = 0
-  while row_index < src.count do
-    element_index = 0
-    while element_index < src[row_index].count
-    inner_array.push("I love #{src[row_index][element_index]} and #{src[row_index][element_index + 1]} on my pizza")
+  while row_index < src[row_index].count do
+    inner_array.push("I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza")
   # As such, there should be a new String for each inner array, or pair
-end
   row_index += 1
 end
   return inner_array
