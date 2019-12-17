@@ -5,6 +5,8 @@ def join_ingredients(src)
   # inserted into this template:
   inner_array = []
   row_index = 0
+  while row_index < src.count do
+    
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
   return src.count
