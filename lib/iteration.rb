@@ -7,7 +7,6 @@ def join_ingredients(src)
   row_index = 0
   while row_index <= src[row_index].count() do
     inner_array.push("I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza")
-  # As such, there should be a new String for each inner array, or pair
   row_index += 1
 end
   return inner_array
